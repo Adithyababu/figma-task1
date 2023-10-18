@@ -1,0 +1,109 @@
+*{
+    text-align: center;
+    overflow-x: hidden;
+}
+header{
+width: 1440px;
+height: 800px;
+background-image: url("./images/Background\ Image.png");
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+background-attachment: fixed;
+}
+.logo{
+    margin-left: 250px;
+   margin-top: 44.3px;
+    width: 203px;
+   height: 121.476px;
+   flex-shrink: 0;
+   background-image: url("./images/Logo\ \(1\).png");
+}
+a{
+    text-decoration: none;
+    font-size: 23px;
+    text-align: center;
+}
+
+span{
+color: #FF9001;
+font-family: 'Satisfy', cursive;
+font-size: 45px;
+font-style: normal;
+font-weight: 400;
+line-height: 54.566px; /* 90.714% */
+text-align: center;
+}
+ .heading{
+color: #DEDEDE;
+text-align: center;
+font-family: 'Satisfy', cursive;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 70.893px; /* 63.462% */
+}
+.row{
+    margin-top: 0px;
+    padding-top: 92px;
+ width: 1440px;
+height: 1313px;
+background: #000;
+text-align: left;
+display: flex;
+justify-content: space-around;
+}
+.seconddiv p{
+font-family: 'Inter', sans-serif;
+font-size: 36px;
+font-weight: 600;
+margin: 0px;
+position: absolute;
+color: #FFF;
+padding-left: 92px;
+padding-top: 66px;
+
+}
+.column1{
+ width: 613px;
+height: 390px;
+border-radius: 26px;
+overflow-y: hidden;
+background-image: url("./images/Rectangle\ 350.png");
+background-repeat: no-repeat;
+margin-top: 60px;
+}
+
+.column{
+    width: 613px;
+   height: 390px;
+   flex-shrink: 0;
+   border-radius: 26px;
+   overflow-y: hidden;
+   background-image: url("./images/Rectangle\ 351.png");
+   background-repeat: no-repeat;
+  padding-left: 100px;
+  margin-top: 60px;
+
+}
+
+.column2{
+    width: 613px;
+   height: 390px;
+   border-radius: 26px;
+   overflow-y: hidden;
+   background-image: url("./images/Rectangle\ 352.png");
+   background-repeat: no-repeat;
+   }
+ .column3{
+    width: 613px;
+   height: 390px;
+   flex-shrink: 0;
+   border-radius: 26px;
+   overflow-y: hidden;
+   background-image: url("./images/Rectangle\ 353.png");
+   background-repeat: no-repeat;
+  padding-left: 100px;
+
+}
