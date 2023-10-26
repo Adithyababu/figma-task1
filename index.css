@@ -356,9 +356,8 @@ margin-top: 87px;
 @media screen and (max-width:680px) {
     header{
         margin: 0px;
-        height: 680px;
         width: 100%;
-        background-position: 50% 50%;
+        background-position: 100%;
     }
     a{
         font-size: 14px;
@@ -375,8 +374,8 @@ margin-top: 87px;
     }
     #container{
         margin: 0px;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
     .products{
         font-size: 30px;
