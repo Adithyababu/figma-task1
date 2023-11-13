@@ -12,11 +12,12 @@
        <a href="index.html"><img src="./images/arrow.png"></a>
        <a class="cart" href="cart.html"><img src="./images/image 91.png"> </a>
     </div>
-       <p class="heading">American Sandwich</p>
-       <p class="amount">300Rs</p>
-       <div class="image1">
-        <img src="./images/Sandwich.png">
+    <div class="image1">
+        <img id="sandwich" src="./images/Sandwich.png">
        </div>
+       <p id="message" class="heading">American Sandwich</p>
+       <p class="amount">300Rs</p>
+       
        <div class="row">
        <div class="column1">
         <div class="num">
@@ -30,30 +31,70 @@
         </div>
        </div>
     </div>
+    <div class="descr">
     <div class="row1">
         <div class="column3">
         <p>Description</p>
+        <div class="line">
+        </div>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur. Sit convallis velit varius lacus turpis eu elit.  </p>
         </div>
         <div class="column4">       
         <span>Ingredients</span>
+        <div class="line">
+        </div>
+        <div class="para1">
+            <p>Lorem ipsum dolor sit amet consectetur. Sit convallis velit varius lacus turpis eu elit.  </p>
+        </div>
         </div> 
     </div>
-    <div class="line">
-    </div>
-    <div class="para">
-        <p>Lorem ipsum dolor sit amet consectetur. Sit convallis velit varius lacus turpis eu elit. Egestas adipiscing </p>
-    </div>
-    <div class="row2">
+</div>
+    
+    <div class="row2 ">
         <div class="img2">
-        <a href="burger.html"><img src="./images/Burger Image.png"></a>
+        <img class="m1"  src="./images/Burger Image.png" onclick="changeImage1()">
         </div>
         <div class="img2">
-        <a href=""><img src="./images/Sandwich Image (1).png"></a>
+        <img class="m2" src="./images/Sandwich Image (1).png"onclick="changeImage2()">
         </div>
         <div class="img2">
-        <a href="hotdog.html"><img src="./images/Hotdog Image.png"></a>
+       <img class="m3" src="./images/Hotdog Image.png"onclick="changeImage3()">
         </div>
+    
     </div>
+    <div class="line1"></div>
     </div>
+    <script>
+        function changeImage1(fileName){
+            var Image1=document.getElementById("sandwich")
+            Image1.src="images/Burger.png";
+            Image1.style.transform="rotate(90deg)";
+            Image1.style.paddingTop='100px'
+            document.getElementById('message')
+            .innerHTML="BURGER"
+        }
+        function changeImage2(fileName)
+        {
+            var Image2=document.getElementById("sandwich")
+            Image2.src="images/Sandwich.png";
+            Image2.style.transform="rotate(360deg)";
+            Image2.style.paddingTop='100px'
+            Image2.style.paddingLeft='50px'
+            document.getElementById('message')
+            .innerHTML="American Sandwich"        
+        } 
+        function changeImage3(fileName)
+        {
+            var Image3=document.getElementById("sandwich")
+            Image3.src="images/Hotdog.png";
+            Image3.style.transform="rotate(90.851deg)";
+            Image3.style.paddingTop='250px'
+            Image3.style.paddingLeft='60px'
+            document.getElementById('message')
+            .innerHTML="Hotdog"
+        }
+    </script>
 </body>
 </html>

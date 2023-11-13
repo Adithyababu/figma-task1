@@ -1,51 +1,97 @@
 *{
 margin: 0;
 padding: 0;
+text-decoration: none;
+list-style: none;
 }
-
-header{
-text-align: center;
+.firstdiv{
+    width: 1440px;
+height: auto;
+}
+.bakery{
 width: 1440px;
 height: 800px;
 background-image: url("./images/Background\ Image.png");
 background-size: cover;
 background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-background-attachment: fixed;
 background-position: center;
 }
-.logo{
-margin-left: 250px;
-margin-top: 44.3px;
-width: 203px;
-height: 121.476px;
-flex-shrink: 0;
-background-image: url("./images/Logo\ \(1\).png");
-}
-a{
-text-decoration: none;
-font-size: 23px;
-text-align: center;
-}
 
-span{
-color: #FF9001;
-font-family: 'Satisfy', cursive;
-font-size: 45px;
-font-style: normal;
-font-weight: 400;
-line-height: 54.566px; /* 90.714% */
-text-align: center;
+nav{
+    width: 100%;
+    height: 80px;
+}
+nav .container{
+    margin: 0 ;
+    max-width: 1100px;
+}
+nav .navbar{
+    display: block;
+    align-items: center;
+}
+nav .logo img{
+    margin: 0;
+    margin-left: 618px;
+    margin-top: 44px;
+     width: 203px;
+    height: 121.476px;
+flex-shrink: 0;
+}
+nav .menu ul{
+    display: flex;
+    margin-left: 575px;
+}
+nav .menu ul li{
+    padding-top: 29px;
+
+}
+nav .menu ul li a{
+font-size: 23px;
+margin-top: 20px;
+}
+label i{
+    padding-top: 29px;
+    color: #FFF;
+    font-size: 25px;
+}
+#check{
+    display: none;
+}
+label{
+    display: none;
+}
+.title{
+    display: block;
+    margin-top: 264px;
+margin-left: 409px;
+}
+.title1{
+    display: none;
+}
+.title span{
+    color: #FF9001;
+    text-align: center;
+    font-family: Quizine;
+    font-size: 60.152px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54.566px; /* 90.714% */
+    text-transform: lowercase;
+    padding-left: 80px;
 }
  .heading{
-color: #DEDEDE;
-text-align: center;
-font-family: 'Satisfy', cursive;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 70.893px; /* 63.462% */
+    color: #DEDEDE;
+    font-family: Quizine;
+    font-size: 111.71px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70.893px; /* 63.462% */
+    letter-spacing: -1.676px;
+    text-transform: lowercase;
+    margin-left: -150px;
+}
+.heading p{
+    margin-left: 150px;
 }
 
 #container{
@@ -92,8 +138,8 @@ left: 92px;
 border-radius: 26px;
 }
 .column1 img{
-    width: 100%;
-    height: 100%;
+    width: 613px;
+    height: 390px;
 }
 .column2{
 width: 613px;
@@ -104,8 +150,8 @@ border-radius: 26px;
     
 }
 .column2 img{
-    width: 100%;
-    height: 100%;
+    width: 613px;
+    height: 390px;
 }
 .row1 p{
 width: 125px;
@@ -146,8 +192,8 @@ border-radius: 26px
 
 }
 .column3 img{
-    width: 100%;
-    height: 100%;
+    width: 613px;
+    height: 390px;
 }
 .column4{
 width: 613px;
@@ -157,8 +203,8 @@ left: 735px;
 border-radius: 26px;
 }
 .column4 img{
-    width: 100%;
-    height: 100%;
+    width: 613px;
+    height: 390px;
 }
 #contact{
     width: 1440px;
@@ -353,38 +399,159 @@ margin-right: 22px;
 margin-top: 87px;
 }
 
-@media screen and (max-width:680px) {
-    header{
-        margin: 0px;
-        width: 100%;
-        background-position: 100%;
-    }
-    a{
-        font-size: 14px;
-    }
-    .heading{
-        font-size: 18px;
-    }
-    .logo{
-        margin-left: 50px;
+@media screen and (max-width:830px) {
+    nav .menu ul {
+        position:fixed;
+        top:90px;
+        left:-100%;
+        margin: 0;
+        width: 208px;
+        height: 283px;
+        display: block;
+        background: #0F0F0F;
+        text-align: center;
+        border-radius: 0px 0px 8.915px 8.915px;
+        transition: 400ms all ease ;
         
+        }
+        nav .logo img{
+            width: 68.516px;
+            height: 41px;
+            margin: 0;
+            align-items: center;
+            padding-top: 20px;
+        }
+        nav{
+            width: 100%;
+            height: auto;
+        }
+        nav .container{
+            max-width: 100%;
+        }
+        nav .menu ul li{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        nav .navbar{
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 20px;
+        }
+        nav .menu ul li a{
+            font-size: 15.738px;
+          }   
+        #check:checked ~ ul{
+         left: 0%;
+        }
+        #check:checked ~ label i::before{
+            content: '\f00d';
+        }
+        label{
+            display: block;
+            margin-left: 200px;
+            margin-right: 20px;
+        }
+        
+    .bakery{
+        margin: 0;
+        width:100%;
+        background-image: url("./images/Background\ Image.png");
+        background-position: center;
     }
-    span{
-        font-size: 18px;
+    .firstdiv{
+        height: auto;
+        min-width: 280px;
+    }
+    .title{
+        margin: 0;
+        margin-top: 311px;
+
+    }
+    .title1{
+        margin: 0;
+        display: contents;
+        display: block;
+        margin-top: 159px;
+
+    }
+    .title1 span{
+        color: #FF9001;
+        font-family: Quizine;
+        font-size: 48.369px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 43.877px; /* 90.714% */
+        text-transform: lowercase;
+        margin: 0;
+        margin-left: 121px;
+        margin-right: 120px;
+    }
+    .heading1{
+        color: #FFF;
+font-family: BR Firma;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 10.5px; /* 105% */
+letter-spacing: -0.05px;
+width: 257px;
+margin: 0;
+margin-top: 26px;
+margin-left: 72px;
+margin-right: 51px;
+    }
+   
+    .heading{
+        font-size: 32.56px;
+        line-height: 36.528px; /* 63.462% */
+           letter-spacing: -0.863px;
+                margin: 0;
+                width: 321px;
+                height: 74px;
+                margin-left: 55px;
+                margin-right: 22px;
+
+    }
+    .heading p{
+        margin: 0;
+        margin-left: 50px;
+    }
+    nav .logo img{
+        margin: 0;
+        margin-left: 50px;
+    }
+    .title span{
+        width: 268px;
+        font-size: 32.369px;
+        line-height: 43.877px;
+        margin: 0;
+        padding: 0;
+        margin-left: 46px;
+        margin-right: 46px;
     }
     #container{
-        margin: 0px;
+        margin: 0;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
     .products{
+        width: 100%;
+        height: 31px;
         font-size: 30px;
-        text-align: center;
-    }
+        padding: 0;
+        margin: 0;
+        padding-top: 29px;
+        padding-left: 22px;
+        }
     .row1{
         display: block;
         height: 100%;
-        padding: 10px;
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .row1 a{
+        margin: 0;
     }
     .row1 p{
         padding: 20px;
@@ -395,7 +562,9 @@ margin-top: 87px;
         margin:0;
         display: block;
         height: 100%;
-        padding: 10px;
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 10px;
     }
     .row2 p{
         padding: 20px;
@@ -405,35 +574,42 @@ margin-top: 87px;
     .column1{
         width: auto;
         height: auto;
+        margin-left: 15px;
     }
     .column1 img{
-        width: 100%;
-        height: 100%;
+        width: 310px;
+        height: 147px;
     }
     .column2{
         width: auto;
         height: auto;
+        margin-left: 15px;
+
     }
     .column2 img{
-        width: 100%;
-        height: 100%;
+        width: 310px;
+        height: 147px;
     }
     
     .column3{
         width: auto;
         height: auto;
+        margin-left: 15px;
+
     }
     .column3 img{
-        width: 100%;
-        height: 100%;
+        width: 310px;
+        height: 147px;
     }
     .column4{
         width: auto;
         height: auto;
+        margin-left: 15px;
+
     }
     .column4 img{
-        width: 100%;
-        height: 100%;
+        width: 310px;
+        height: 147px;
     }
     #contact{
     text-align: center;
@@ -471,7 +647,7 @@ margin-top: 87px;
         margin-top: 99px;
         margin-left: 285px;
         position: absolute;
-        width: 77px;
+        width: 100%;
         height: 217px;
         padding: 9px 6px 220px 7px;
     }
