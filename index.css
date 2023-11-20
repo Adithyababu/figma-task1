@@ -60,6 +60,10 @@ label i{
 label{
     display: none;
 }
+@font-face {
+    font-family: 'quizine';
+    src: url(fonts/FontsFree-Net-Quizine-Regular.ttf);
+}
 .title{
     display: block;
     margin-top: 264px;
@@ -77,7 +81,7 @@ margin-left: 409px;
     font-weight: 400;
     line-height: 54.566px; /* 90.714% */
     text-transform: lowercase;
-    padding-left: 80px;
+    padding-left: 150px;
 }
  .heading{
     color: #DEDEDE;
@@ -88,10 +92,9 @@ margin-left: 409px;
     line-height: 70.893px; /* 63.462% */
     letter-spacing: -1.676px;
     text-transform: lowercase;
-    margin-left: -150px;
 }
 .heading p{
-    margin-left: 150px;
+    margin-left: 130px;
 }
 
 #container{
@@ -449,7 +452,7 @@ margin-top: 87px;
         label{
             display: block;
             margin-left: 200px;
-            margin-right: 20px;
+            margin-right: 10px;
         }
         
     .bakery{
@@ -460,7 +463,6 @@ margin-top: 87px;
     }
     .firstdiv{
         height: auto;
-        min-width: 280px;
     }
     .title{
         margin: 0;
@@ -484,7 +486,10 @@ margin-top: 87px;
         text-transform: lowercase;
         margin: 0;
         margin-left: 121px;
-        margin-right: 120px;
+    }
+    @font-face {
+        font-family: 'BR Firma';
+        src: url(fonts/FontsFree-Net-BRFirma-Regular.ttf);
     }
     .heading1{
         color: #FFF;
@@ -498,7 +503,6 @@ width: 257px;
 margin: 0;
 margin-top: 26px;
 margin-left: 72px;
-margin-right: 51px;
     }
    
     .heading{
@@ -508,13 +512,13 @@ margin-right: 51px;
                 margin: 0;
                 width: 321px;
                 height: 74px;
-                margin-left: 55px;
+                margin-left: 105px;
                 margin-right: 22px;
 
     }
     .heading p{
         margin: 0;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     nav .logo img{
         margin: 0;
@@ -526,8 +530,7 @@ margin-right: 51px;
         line-height: 43.877px;
         margin: 0;
         padding: 0;
-        margin-left: 46px;
-        margin-right: 46px;
+         margin-left: 105px;
     }
     #container{
         margin: 0;
@@ -541,35 +544,38 @@ margin-right: 51px;
         padding: 0;
         margin: 0;
         padding-top: 29px;
-        padding-left: 22px;
+        padding-left: 31px;
         }
     .row1{
         display: block;
         height: 100%;
         padding: 0;
-        padding-left: 30px;
-        padding-right: 10px;
+        padding-left: 20px;
     }
     .row1 a{
         margin: 0;
     }
     .row1 p{
-        padding: 20px;
         font-size: 18px;
         text-align: center;
+        margin-left:-30px;
+        margin-bottom: 31px;
+        margin-top: 10px;
     }
     .row2{
         margin:0;
         display: block;
         height: 100%;
         padding: 0;
-        padding-left: 30px;
-        padding-right: 10px;
+        padding-left: 20px;
     }
     .row2 p{
-        padding: 20px;
         font-size: 18px;
         text-align: center;
+        margin-top: 10px;
+        margin-left:-30px;
+        padding-bottom: 31px;
+
     }
     .column1{
         width: auto;
